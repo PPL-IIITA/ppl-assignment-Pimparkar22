@@ -1,0 +1,7 @@
+6
+"Ayush" is in a relationship with "Neha"
+"Abhimanyu" is in a relationship with "Rekha"
+"Abhishek" is in a relationship with "Jaya"
+"Aditya" is in a relationship with "Priyanka"
+"Utsbah" is in a relationship with "Sushma"
+"Kunal" is in a relationship with "Anushka"

@@ -14,7 +14,7 @@ public class PPL_Q2Java {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         gifting_mechanism g=new gifting_mechanism();
         g.gift();
       

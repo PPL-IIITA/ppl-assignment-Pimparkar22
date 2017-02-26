@@ -1,0 +1,9 @@
+PPL Assignment done by
+name:Aditya Pimparkar
+roll no:iit2015012
+Questions are implemented in java
+Output of PPL_Q1 stored in output.txt
+Input is taken from corresponding csv files
+Output of PPL_Q2 stored in log.txt
+Input is taken from corresponding csv files
+Documentation of both is present in there respective Documentation folders 

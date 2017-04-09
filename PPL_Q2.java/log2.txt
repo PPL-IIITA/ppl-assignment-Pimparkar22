@@ -1,0 +1,46 @@
+
+"Ayush" gave "Neha" an essential gift of price 10
+"Ayush" gave "Neha" an essential gift of price 12
+"Ayush" gave "Neha" an essential gift of price 14
+"Ayush" gave "Neha" an essential gift of price 16
+"Ayush" gave "Neha" an essential gift of price 18
+"Ayush" gave "Neha" an essential gift of price 20
+"Ayush" gave "Neha" a luxury gift of price 80
+"Ayush" gave "Neha" a luxury gift of price 82
+"Abhimanyu" gave "Rekha" a luxury gift of price 90
+"Abhimanyu" gave "Rekha" a luxury gift of price 88
+"Abhimanyu" gave "Rekha" a luxury gift of price 86
+"Abhimanyu" gave "Rekha" an essential gift of price 20
+"Abhimanyu" gave "Rekha" an essential gift of price 18
+"Abhimanyu" gave "Rekha" an essential gift of price 16
+"Abhimanyu" gave "Rekha" an essential gift of price 14
+"Abhishek" gave "Jaya" a luxury gift of price 90
+"Abhishek" gave "Jaya" a luxury gift of price 88
+"Abhishek" gave "Jaya" a luxury gift of price 86
+"Abhishek" gave "Jaya" a luxury gift of price 84
+"Abhishek" gave "Jaya" a luxury gift of price 82
+"Aditya" gave "Priyanka" an essential gift of price 10
+"Aditya" gave "Priyanka" an essential gift of price 12
+"Aditya" gave "Priyanka" an essential gift of price 14
+"Aditya" gave "Priyanka" an essential gift of price 16
+"Aditya" gave "Priyanka" an essential gift of price 18
+"Aditya" gave "Priyanka" an essential gift of price 20
+"Utsbah" gave "Sushma" an essential gift of price 10
+"Utsbah" gave "Sushma" an essential gift of price 12
+"Utsbah" gave "Sushma" an essential gift of price 14
+"Utsbah" gave "Sushma" an essential gift of price 16
+"Utsbah" gave "Sushma" an essential gift of price 18
+"Utsbah" gave "Sushma" an essential gift of price 20
+"Utsbah" gave "Sushma" a luxury gift of price 80
+"Kunal" gave "Anushka" an essential gift of price 10
+"Kunal" gave "Anushka" an essential gift of price 12
+"Kunal" gave "Anushka" an essential gift of price 14
+"Kunal" gave "Anushka" an essential gift of price 16
+"Kunal" gave "Anushka" an essential gift of price 18
+"Kunal" gave "Anushka" an essential gift of price 20
+The k 2-most happy couples are(boy girl) 
+Couple "Abhimanyu""Jaya"
+Couple "Aditya""Neha"
+The k 2-most compatible couples are(boy girl) :
+Couple "Aditya""Rekha"
+Couple "Ayush""Priyanka"

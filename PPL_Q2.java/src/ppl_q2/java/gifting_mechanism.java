@@ -31,7 +31,7 @@ public class gifting_mechanism {
         Luxury_gift ls[]=new Luxury_gift[100];
         Utility_gift ug[]=new Utility_gift[100];
         int i=0;
-         String csvFile = "/home/aditya/Desktop/boys1.csv";
+         String csvFile = "../csv/boys1.csv";
         String line = "";
         String cvsSplitBy = ",";
 
@@ -50,6 +50,7 @@ public class gifting_mechanism {
                 x[i].set_intelligence(Integer.parseInt(boy[3]));
                 x[i].set_attraction_requirement(Integer.parseInt(boy[4]));
                 x[i].property=Integer.parseInt(boy[5]);
+                x[i].set_status(false);
                 i++;
 
             }
@@ -58,7 +59,7 @@ public class gifting_mechanism {
             e.printStackTrace();
         }
         int no_of_boys=i;
-         csvFile = "/home/aditya/Desktop/girls1.csv";
+         csvFile = "../csv/girls1.csv";
          line = "";
          cvsSplitBy = ",";
          int j=0;
@@ -75,6 +76,7 @@ public class gifting_mechanism {
                 y[j].set_attractiveness(Integer.parseInt(girl[2]));
                 y[j].set_intelligence(Integer.parseInt(girl[3]));
                 y[j].property=Integer.parseInt(girl[4]);
+                y[j].set_status(false);
                 j++;
 
             }
@@ -83,7 +85,7 @@ public class gifting_mechanism {
             e.printStackTrace();
         }
         int no_of_girls=j;
-        csvFile = "/home/aditya/Desktop/essential_gift.csv";
+        csvFile = "../csv/essential_gift.csv";
          line = "";
          cvsSplitBy = ",";
           j=0;
@@ -105,7 +107,7 @@ public class gifting_mechanism {
             e.printStackTrace();
         }
         int no_es=j;
-        csvFile = "/home/aditya/Desktop/luxury_gift.csv";
+        csvFile = "../csv/luxury_gift.csv";
          line = "";
          cvsSplitBy = ",";
          j=0;
@@ -131,7 +133,7 @@ public class gifting_mechanism {
         }
         int no_ls=j;
         
-         csvFile = "/home/aditya/Desktop/utility_gift.csv";
+         csvFile = "../csv/utility_gift.csv";
          line = "";
          cvsSplitBy = ",";
          j=0;
@@ -161,29 +163,35 @@ public class gifting_mechanism {
         int p,q;
         for(p=0;p<no_of_boys;p++){
             for(q=0;q<no_of_girls;q++){
-                if((x[p].girl_meets_eligibility(y[q].get_maintenance_budget(),y[q].get_attractiveness()))&&(y[q].boy_meets_eligibility(x[p].budget))&&x[p].relationship_status==false&&y[q].relationship_status==false){
-                    x[p].gfname = y[q].get_name();
-			y[q].bfname = x[p].get_name();
-			x[p].relationship_status = true;
-			y[q].relationship_status = true;
+                if((x[p].girl_meets_eligibility(y[q].get_maintenance_budget(),y[q].get_attractiveness()))&&(y[q].boy_meets_eligibility(x[p].budget))){
+                    if (y[q].get_status()==false&&x[p].get_status()==false) {
+                        x[p].gfname = y[q].get_name();
+                        y[q].bfname = x[p].get_name();
+                        x[p].set_status(true);
+                        y[q].set_status(true);
                         x[p].couple_number=h;
                         y[q].couple_number=h;
                         h++;
+                    }
                        
             }
             }
         
         }
-         File fp=new File("log.txt");
+        
+        
+        
+        
+         File fp=new File("log2.txt");
 	         Boolean check;
 		check=fp.createNewFile();
-        try (FileWriter fw = new FileWriter("log.txt"); BufferedWriter bw = new BufferedWriter(fw)) {
+        try (FileWriter fw = new FileWriter("log2.txt"); BufferedWriter bw = new BufferedWriter(fw)) {
            
             bw.newLine();
    
         for(p=0;p<no_of_boys;p++){
             for(q=0;q<no_of_girls;q++){
-                if(x[p].relationship_status=true&&x[p].gfname == y[q].get_name()){
+                if(x[p].get_status()==true&&x[p].gfname == y[q].get_name()){
                     int gprop,bprop;
                     gprop=y[q].property;
                     bprop=x[p].property;
@@ -317,7 +325,7 @@ public class gifting_mechanism {
         
         for(p=0;p<no_of_boys;p++){
             for(q=0;q<no_of_girls;q++){
-                if(x[p].relationship_status=true&&x[p].gfname == y[q].get_name()){
+                if(x[p].get_status()==true&&x[p].gfname == y[q].get_name()){
                     c[j]=new couple_h_and_c();
                     c[j].couple_happiness=x[p].happiness+y[q].happiness;
                     x[p].couple_happiness=c[j].couple_happiness;
@@ -348,9 +356,9 @@ public class gifting_mechanism {
                     
             int u=k;
             
-            for(p=0;p<no_of_girls;p++){
-            for(q=0;q<no_of_boys;q++){
-                if(y[p].couple_number==x[q].couple_number){
+            for(p=0;p<no_of_boys;p++){
+            for(q=0;q<no_of_girls;q++){
+                if(x[p].get_status()==true&&x[p].gfname.equals(y[q].get_name())){
                         if(u>0){
                     
                         System.out.println("Couple "+x[q].get_name()+""+y[p].get_name());
@@ -379,9 +387,9 @@ public class gifting_mechanism {
         bw.write("The k "+k+"-most compatible couples are(boy girl) :");
             bw.newLine();
             u=k;
-            for(p=0;p<no_of_girls;p++){
-            for(q=0;q<no_of_boys;q++){
-                if(y[p].couple_number==x[q].couple_number){
+            for(p=0;p<no_of_boys;p++){
+            for(q=0;q<no_of_girls;q++){
+                if(x[p].get_status()==true&&x[p].gfname == y[q].get_name()){
                         if(u>0){
                     
                         System.out.println("Couple "+x[q].get_name()+""+y[p].get_name());

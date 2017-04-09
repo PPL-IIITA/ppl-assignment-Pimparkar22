@@ -46,9 +46,9 @@ public class girl {
         
         
     }
-        public void set_status(){
+        public void set_status(boolean a){
         
-        relationship_status=false;
+        relationship_status=a;
         
         
     }
@@ -73,6 +73,10 @@ public class girl {
     }
     public int get_maintenance_budget(){
         return maintenance_budget;
+    
+    }
+    public boolean get_status(){
+        return relationship_status;
     
     }
     public double calc_happiness(int prop){

@@ -30,7 +30,7 @@ public class PPL_Q1 {
         boy x[]=new boy[10];
         girl y[]=new girl[6];
         int i=0;
-         String csvFile = "/home/aditya/Desktop/boy.csv";
+         String csvFile = "../csv/boy.csv";
         String line = "";
         String cvsSplitBy = ",";
 
@@ -56,7 +56,7 @@ public class PPL_Q1 {
             e.printStackTrace();
         }
         
-         csvFile = "/home/aditya/Desktop/girl.csv";
+         csvFile = "../csv/girl.csv";
          line = "";
          cvsSplitBy = ",";
          int j=0;

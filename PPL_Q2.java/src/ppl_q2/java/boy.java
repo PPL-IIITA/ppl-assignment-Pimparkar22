@@ -46,9 +46,9 @@ public class boy {
         attraction_requirement=ar;
         
     }
-    public void set_status(){
+    public void set_status(boolean a){
         
-        relationship_status=false;
+        relationship_status=a;
     }
     
    
@@ -75,4 +75,8 @@ public class boy {
         return attraction_requirement;
     
     }
+    public boolean get_status(){
+        return relationship_status;
+    }
+    
 }

@@ -1,0 +1,19 @@
+
+"Ayush" gave "Neha" an essential gift of price 10
+"Ayush" gave "Neha" a luxury gift of price 80
+"Ayush" gave "Neha" a utility gift of price 24
+"Abhimanyu" gave "Rekha" an essential gift of price 10
+"Abhimanyu" gave "Rekha" a luxury gift of price 80
+"Abhimanyu" gave "Rekha" a utility gift of price 24
+"Abhishek" gave "Jaya" an essential gift of price 10
+"Abhishek" gave "Jaya" a luxury gift of price 80
+"Abhishek" gave "Jaya" a utility gift of price 24
+"Aditya" gave "Priyanka" an essential gift of price 10
+"Aditya" gave "Priyanka" a luxury gift of price 80
+"Aditya" gave "Priyanka" a utility gift of price 24
+"Utsbah" gave "Sushma" an essential gift of price 10
+"Utsbah" gave "Sushma" a luxury gift of price 80
+"Utsbah" gave "Sushma" a utility gift of price 24
+"Kunal" gave "Anushka" an essential gift of price 10
+"Kunal" gave "Anushka" a luxury gift of price 80
+"Kunal" gave "Anushka" a utility gift of price 24
